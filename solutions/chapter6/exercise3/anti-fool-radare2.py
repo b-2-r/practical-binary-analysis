@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # ----------------------------------------------------------------------------
-# anti-fool-r2.py
+# anti-fool-radare2.py
 #
 # Written by Manuel Gebele (m.gebele‹ατ›tuta.io)
 # This code is licensed under the MIT License (MIT). 

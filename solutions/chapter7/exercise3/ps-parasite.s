@@ -3,7 +3,7 @@
 ;
 ; Written by Manuel Gebele (m.gebele‹ατ›tuta.io)
 ;
-; Inspired by the book "Practical Binary Analysis" by Dennis Andriesse. 
+; Chapter 7, Exercise 3
 ;
 ; Preconditions/Dependencies:
 ; Refer to elf-parasite.s

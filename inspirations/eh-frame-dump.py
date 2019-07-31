@@ -1,5 +1,6 @@
 # ----------------------------------------------------------------------------
-# eh-frame-dump.py - Written by Manuel Gebele (m.gebele‹ατ›tuta.io)
+# eh-frame-dump.py
+# Written by Manuel Gebele (m.gebele‹ατ›tuta.io)
 #
 # Dumps the content of the eh_frame section.
 # ----------------------------------------------------------------------------

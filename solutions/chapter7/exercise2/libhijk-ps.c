@@ -1,12 +1,14 @@
 /* ---------------------------------------------------------------------------
- * libhijk-ps.c - Written by Manuel Gebele (m.gebele‹ατ›tuta.io)
+ * libhijk-ps.c
+ * 
+ * Written by Manuel Gebele (m.gebele‹ατ›tuta.io)
+ * 
+ * Chapter 7, Exercise 2
  * 
  * A basic example of how to hijack readproc and readproctab2 to coax ps
  * to not show a particular process in its process listing.
  * 
  * TODO: Implement readproctab3 as well.
- * 
- * Inspired by the book "Practical Binary Analysis" by Dennis Andriesse.
  * 
  * Sample Session:
  * $ gcc -o libhijk-ps.so -fPIC -shared -D_GNU_SOURCE libhijk-ps.c

@@ -12,8 +12,8 @@
 #
 # Sample session:
 # $ chmod +x anti-fool-disas.py
-# $ ./anti-fool-disas.py
-# $ ./anti-fool-disas.py -t <binary>
+# $ ./anti-fool-radare2.py
+# $ ./anti-fool-radare2.py -t <binary>
 # ----------------------------------------------------------------------------
 import sys
 import collections

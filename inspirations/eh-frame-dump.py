@@ -1,6 +1,8 @@
 # ----------------------------------------------------------------------------
 # eh-frame-dump.py
+#
 # Written by Manuel Gebele (m.gebele‹ατ›tuta.io)
+# This code is licensed under the MIT License (MIT).
 #
 # Dumps the content of the eh_frame section.
 # ----------------------------------------------------------------------------

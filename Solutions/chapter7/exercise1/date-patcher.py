@@ -1,5 +1,5 @@
 # ----------------------------------------------------------------------------
-# date-patch.py
+# date-patcher.py
 #
 # Written by Manuel Gebele (m.gebele‹ατ›tuta.io)
 # This code is licensed under the MIT License (MIT). 

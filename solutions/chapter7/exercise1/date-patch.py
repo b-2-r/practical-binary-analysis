@@ -1,12 +1,8 @@
 # ----------------------------------------------------------------------------
-# date_patch.py
+# date-patch.py
 #
 # Written by Manuel Gebele (m.gebele‹ατ›tuta.io)
-#
-# Chapter 7, Exercise 1
-#
-# Sample session:
-# $ ./date_patch
+# This code is licensed under the MIT License (MIT). 
 # ----------------------------------------------------------------------------
 import os
 import shutil

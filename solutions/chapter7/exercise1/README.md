@@ -8,7 +8,7 @@ format string.
 
 date-patch.py
 
-# Sample Session
+## Sample Session
 
 ```
 $ python3 date-patch.py

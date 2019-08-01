@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # ----------------------------------------------------------------------------
-# anti-fool-r2.py
+# anti-fool-radare2.py
 #
 # Written by Manuel Gebele (m.gebele‹ατ›tuta.io)
 # This code is licensed under the MIT License (MIT). 
@@ -12,8 +12,8 @@
 #
 # Sample session:
 # $ chmod +x anti-fool-disas.py
-# $ ./anti-fool-disas.py
-# $ ./anti-fool-disas.py -t <binary>
+# $ ./anti-fool-radare2.py
+# $ ./anti-fool-radare2.py -t <binary>
 # ----------------------------------------------------------------------------
 import sys
 import collections

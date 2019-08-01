@@ -4,16 +4,6 @@
 #
 # Written by Manuel Gebele (m.gebele‹ατ›tuta.io)
 # This code is licensed under the MIT License (MIT). 
-#
-# Chapter 6, Exercise 3
-#
-# Requirements:
-# $ pip3 install r2pipe
-#
-# Sample session:
-# $ chmod +x anti-fool-disas.py
-# $ ./anti-fool-radare2.py
-# $ ./anti-fool-radare2.py -t <binary>
 # ----------------------------------------------------------------------------
 import sys
 import collections

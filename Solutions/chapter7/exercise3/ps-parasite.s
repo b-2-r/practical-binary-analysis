@@ -2,26 +2,7 @@
 ; ps-parasite.s
 ;
 ; Written by Manuel Gebele (m.gebele‹ατ›tuta.io)
-;
-; Chapter 7, Exercise 3
-;
-; Preconditions/Dependencies:
-; Refer to elf-parasite.s
-;
-; Sample session:
-; $ nasm -f bin -o ps-parasite.bin ps-parasite.s
-; $ cp /bin/ps ./ps-modified
-; $ ./elfinject ps-modified ps-parasite.bin ".parasite" 0x800000 -1
-; $ hexedit ps-modified (replace call readproc/readproctab2 instructions)
-;   E822F4FFFF --> E882DF3F00 (call readproc     --> call parasite_start_address)
-;   E8C2F3FFFF --> E8B1E33F00 (call readproctab2 --> call parasite_start_address +
-;                                                    hijacked_readproctab2 offset)
-; $ ./victim
-; $ ./ps.modified
-; $ ./ps.modified aux
-; $ ./ps.modified -e
-; $ ./ps.modified -ef
-; $ ./ps.modified f (invokes readproctab2)
+; This code is licensed under the MIT License (MIT).
 ;---------------------------------+-----------------------------------------------+
 ; CODE LISTING                    | CODE COMMENT
 ;---------------------------------+-----------------------------------------------+

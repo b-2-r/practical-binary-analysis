@@ -6,12 +6,12 @@ format string.
 
 ## Solution
 
-date-patch.py
+date-patcher.py
 
 ## Sample Session
 
 ```
-$ python3 date-patch.py
+$ python3 date-patcher.py
 [*] Applying format string patch at offset 0xa944
 [*] Applying nl_langinfo item patch at offset 0x2223
 [*] Done applying patches

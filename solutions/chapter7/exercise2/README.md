@@ -5,7 +5,7 @@ show directory listings only for paths within your home directory.
 
 ## Solution
 
-libls-limiter
+libls-limiter.c
 
 ## Sample session:
 

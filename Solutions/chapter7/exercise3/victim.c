@@ -2,14 +2,7 @@
  * victim.c
  * 
  * Written by Manuel Gebele (m.gebele‹ατ›tuta.io)
- * 
- * Chapter 7, Exercise 3
- * 
- * Preconditions/Dependencies:
- * Refer to elf-parasite.s
- * 
- * Sample session:
- * $ gcc -o victim victim.c
+ * This code is licensed under the MIT License (MIT).
  * ---------------------------------------------------------------------------
  */
 #include <stdio.h>

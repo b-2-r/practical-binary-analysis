@@ -52,7 +52,7 @@ exit
 ```
 $ nasm -f bin -o ps-parasite.bin ps-parasite.s
 $ python3 ps-patch.py # this patches calls to readproc/readproctab2
-[*] Copying /bin/ps to [...]
+[*] Copying /bin/ps to [...]/ps-modified
 [*] Applying readproc patch at offset 0x2cf9
 [*] Applying readproctab2 patch at offset 0x2909
 [*] Done applying patches

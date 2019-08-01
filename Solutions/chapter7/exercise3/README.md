@@ -61,5 +61,13 @@ $ ./victim
 I'm a victim!
 $ netstat -ap tcp | grep victim
 tcp        0      0 *:19484    *:*    LISTEN    10662/victim 
-
-
+$ ./ps-modified # the victim process isn't visible
+[...]
+$ ./ps-modified aux # the victim process isn't visible
+[...]
+$ ./ps-modified -e # the victim process isn't visible
+[...]
+$ ./ps-modified -ef # the victim process isn't visible
+[...]
+$ ./ps-modified f (invokes readproctab2) # the victim process isn't visible
+[...]

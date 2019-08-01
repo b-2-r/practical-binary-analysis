@@ -6,7 +6,7 @@ Contains randomly inspired code samples.
 
 Dumps the content of the **eh_frame** section.
 
-### Sample session
+### Sample Session
 
 ```
 $ ./eh-frame-dump.py `which su`

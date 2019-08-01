@@ -1,28 +1,9 @@
-/*
+/* ---------------------------------------------------------------------------
  * fool-recursive-disas.c
  * 
  * Written by Manuel Gebele (m.gebele‹ατ›tuta.io)
  * This code is licensed under the MIT License (MIT). 
- * 
- * Chapter 6, Exercise 2
- * 
- * All samples were tested against radare2 (r2).
- * 
- * Sample session:
- * $ gcc -masm=intel -o fool-recursive-disas fool-recursive-disas.c
- * $ r2 fool-recursive-disas
- * 
- * Display global callgraph:
- * [0x00400480]> agC
- *  
- * Display function callgraph:
- * [0x00400480]> agc @ [addr]
- * 
- * Disassemble function (recursive):
- * [0x00400480]> pdf @ [addr]
- * 
- * Print disassembly (recursive):
- * [0x00400480]> pdr @ [addr]
+ * ---------------------------------------------------------------------------
  */
 #include <stdio.h>
 

@@ -12,7 +12,7 @@ elf-parasite.s (acts as a bind shell)
 
 ## Bonus Solution
 
-ps-parasite.s (acts as the process hider)
+ps-parasite.s (acts as the process hider)\
 ps-patcher.py (acts as a patch helper)
 
 ## Sample Session

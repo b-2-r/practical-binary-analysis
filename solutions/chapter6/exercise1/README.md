@@ -8,7 +8,7 @@ achieve this (for instance, using gcc’s asm keyword).
 
 fool-linear-disas.c
 
-## Sample session
+## Sample Session
 
 ```
 $ gcc -masm=intel -o fool-linear-disas fool-linear-disas.c

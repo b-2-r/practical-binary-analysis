@@ -7,12 +7,12 @@ copy of ps that doesn’t show the parasite process in the process listing.
 
 ## Solution
 
-victim.c (acts as the host binary)
-elf-parasite.s
+victim.c (acts as the host binary)\
+elf-parasite.s (acts as a bind shell)
 
 ## Bonus Solution
 
-ps-parasite.s
+ps-parasite.s (acts as the process hider)
 
 ## Sample Session
 

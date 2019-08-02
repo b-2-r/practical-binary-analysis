@@ -54,8 +54,8 @@ exit
 $ nasm -f bin -o ps-parasite.bin ps-parasite.s
 $ python3 ps-patcher.py # this patches calls to readproc/readproctab2
 [*] Copying /bin/ps to [...]/ps-modified
-[*] Applying readproc patch at offset 0x2cf9
-[*] Applying readproctab2 patch at offset 0x2909
+[*] Applying patch e882df3f00 at offset 0x2cf9
+[*] Applying patch e8b1e33f00 at offset 0x2909
 [*] Done applying patches
 $ ./elfinject ps-modified ps-parasite.bin ".parasite" 0x800000 -1
 $ ./victim

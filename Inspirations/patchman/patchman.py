@@ -7,6 +7,7 @@
 # ----------------------------------------------------------------------------
 import sys
 import json
+
 from enum import Enum
 from argparse import ArgumentParser, SUPPRESS
 
@@ -67,7 +68,6 @@ def open_binary(args):
     bin_file = open(bin_path, 'r+b')
     bin_bytes = bin_file.read()
     bin_file.seek(0)
-
     return (bin_file, bin_bytes)
 
 def apply_patches_at_path(args):
@@ -90,7 +90,7 @@ def apply_patch_from_cmdline(args):
         patch['offset'], patch['patched_bytes'] = args.offset_patch_info
 
     bin_bytes = apply_patch(patch, bin_bytes)
-
+    
     bin_file.write(bin_bytes)
     bin_file.close()
 
@@ -106,11 +106,12 @@ def parse_args():
     parser.add_argument('-v',
         action='version', version='1.0')
 
+    # Add a separate argument group for clearer usage understanding.
     arg_group = parser.add_argument_group(
         'patching arguments',
         'one of the arguments -r -o -f is required'
     )
-
+ 
     me_group = arg_group.add_mutually_exclusive_group(required=True)
     me_group.add_argument('-r',
         nargs=2, metavar=('ORIG', 'PATCH'), dest='replace_patch_info',
@@ -125,13 +126,11 @@ def parse_args():
     args = parser.parse_args()
     return args
 
-def main():
-    args = parse_args()
+def main(args):
     if args.replace_patch_info or args.offset_patch_info:
         apply_patch_from_cmdline(args)
     else:
         apply_patches_at_path(args)
 
 # Entry point
-
-main()
+main(parse_args())

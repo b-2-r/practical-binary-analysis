@@ -55,3 +55,7 @@ $ LD_PRELOAD=`pwd`/libhijk-ps.so ps f
 10053 pts/9    Ss     0:02 -zsh
 10225 pts/9    R+     0:00  \_ ps f
 ```
+
+## patchman [Page 155]
+
+[A bare-metal binary modification tool.](https://github.com/0xe1a00000/practical-binary-analysis/tree/master/Inspirations/patchman) book.

@@ -70,16 +70,6 @@ def open_binary(args):
     bin_file.seek(0)
     return (bin_file, bin_bytes)
 
-def apply_patches_at_path(args):
-    bin_file, bin_bytes = open_binary(args)
-
-    patches = read_patches_at_path(args.patches_path)
-    for patch in patches:
-        bin_bytes = apply_patch(patch, bin_bytes)
-
-    bin_file.write(bin_bytes)
-    bin_file.close()
-
 def apply_patch_from_cmdline(args):
     bin_file, bin_bytes = open_binary(args)
 
@@ -91,6 +81,16 @@ def apply_patch_from_cmdline(args):
 
     bin_bytes = apply_patch(patch, bin_bytes)
     
+    bin_file.write(bin_bytes)
+    bin_file.close()
+
+def apply_patches_at_path(args):
+    bin_file, bin_bytes = open_binary(args)
+
+    patches = read_patches_at_path(args.patches_path)
+    for patch in patches:
+        bin_bytes = apply_patch(patch, bin_bytes)
+
     bin_file.write(bin_bytes)
     bin_file.close()
 

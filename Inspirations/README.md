@@ -58,4 +58,4 @@ $ LD_PRELOAD=`pwd`/libhijk-ps.so ps f
 
 ## patchman [Page 155]
 
-[A bare-metal binary modification tool.](https://github.com/0xe1a00000/practical-binary-analysis/tree/master/Inspirations/patchman) book.
+[A bare-metal binary modification tool.](https://github.com/0xe1a00000/practical-binary-analysis/tree/master/Inspirations/patchman)

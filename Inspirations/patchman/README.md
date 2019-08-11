@@ -14,7 +14,7 @@ All hex values (offsets and bytes) must not contain the ***0x*** prefix!
 
 The following example files illustrate the format of a patch file expected by **patchman**.
 
-### Replace Patch
+### Replace Patches
 
 File ***replace-patches.json***:
 
@@ -33,7 +33,7 @@ File ***replace-patches.json***:
 12 }
 ```
 
-###  Offset Patch
+###  Offset Patches
 
 File ***offset-patches.json***:
 
@@ -71,7 +71,7 @@ File ***mixed-patches.json***:
 12 }
 ```
 
-## Sample Session
+## Sample Sessions
 
 Show program's help message and exit: 
 

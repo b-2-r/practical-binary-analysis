@@ -12,25 +12,25 @@ All hex values (offsets and bytes) must not contain the ***0x*** prefix!
 
 ## Patch File Format
 
-Note that both types of patches can be mixed.
+The following example files illustrate the format of a patch file expected by **patchman**.
 
 ### Replace Patch
 
 File ***replace-patches.json***:
 
 ```
-{
-    "patches": [
-        {
-            "orig_bytes":    "e822f4ffff",
-            "patched_bytes": "e882df3f00"
-        },
-        {
-            "orig_bytes":    "e8c2f3ffff",
-            "patched_bytes": "e8b1e33f00"
-        }
-    ]
-}
+1 {
+2     "patches": [
+3         {
+4             "orig_bytes":    "e822f4ffff",
+5             "patched_bytes": "e882df3f00"
+6         },
+7         {
+8             "orig_bytes":    "e8c2f3ffff",
+9             "patched_bytes": "e8b1e33f00"
+10        }
+11    ]
+12 }
 ```
 
 ###  Offset Patch
@@ -38,18 +38,37 @@ File ***replace-patches.json***:
 File ***offset-patches.json***:
 
 ```
-{
-    "patches": [
-        {
-            "offset":    "2cf9",
-            "patched_bytes": "e882df3f00"
-        },
-        {
-            "offset":    "2909",
-            "patched_bytes": "e8b1e33f00"
-        }
-    ]
-}
+1 {
+2     "patches": [
+3         {
+4             "offset":    "2cf9",
+5             "patched_bytes": "e882df3f00"
+6         },
+7         {
+8             "offset":    "2909",
+9             "patched_bytes": "e8b1e33f00"
+10        }
+11    ]
+12 }
+```
+
+###  Mixed Patches
+
+File ***mixed-patches.json***:
+
+```
+1 {
+2     "patches": [
+3         {
+4             "orig_bytes":    "e822f4ffff",
+5             "patched_bytes": "e882df3f00"
+6         },
+7         {
+8             "offset":    "2909",
+9             "patched_bytes": "e8b1e33f00"
+10        }
+11    ]
+12 }
 ```
 
 ## Sample Session
@@ -103,6 +122,14 @@ Patch ***binary*** by applying the (offset) patches defined in ***offset-patches
 
 ```
 $ ./patchman.py -f offset-patches.json binary
+[patchman::dbg] Applying patch 0xe882df3f00 at offset 0x2cf9
+[patchman::dbg] Applying patch 0xe8b1e33f00 at offset 0x2909
+```
+
+Patch ***binary*** by applying the (mixed) patches defined in ***mixed-patches.json***:
+
+```
+$ ./patchman.py -f mixed-patches.json binary
 [patchman::dbg] Applying patch 0xe882df3f00 at offset 0x2cf9
 [patchman::dbg] Applying patch 0xe8b1e33f00 at offset 0x2909
 ```

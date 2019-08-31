@@ -59,3 +59,8 @@ $ LD_PRELOAD=`pwd`/libhijk-ps.so ps f
 ## patchman [Page 155]
 
 [A bare-metal binary modification tool.](https://github.com/0xe1a00000/practical-binary-analysis/tree/master/Inspirations/patchman)
+
+## patchman [Page 67]
+
+[A macOS compatible version of the binary loader from chapter 4.](https://github.com/0xe1a00000/practical-binary-analysis/tree/master/Inspirations/loader-macOS)
+

@@ -1,4 +1,4 @@
-/* Demonstrate the binary loader from ../inc/loader.cc */
+/* Demonstrate the binary loader from inc/loader.cc */
 
 #include <stdio.h>
 #include <stdint.h>
